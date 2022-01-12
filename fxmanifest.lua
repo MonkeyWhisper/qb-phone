@@ -17,7 +17,10 @@ client_scripts {
     'client/animation.lua'
 }
 
-server_script 'server/main.lua'
+server_script {
+    'server/main.lua',
+    '@oxmysql/lib/MySQL.lua'
+}
 
 files {
     'html/*.html',
